@@ -6,4 +6,9 @@ function exponentiate(base, power) {
     }
     return results
 }
-console.log(exponentiate(3,4))
+console.log(exponentiate(4,4))
+
+function exponentiate(base, power) {
+    return Math.pow(base, power)
+}
+console.log(exponentiate(4,4))
