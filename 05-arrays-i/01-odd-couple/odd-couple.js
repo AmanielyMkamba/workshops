@@ -1,18 +1,20 @@
 // YOUR CODE BELOW
-function oddCouple(arr) {
-    let newArr= [];
-    if(arr%2===0) {
-        return [];
-    }
-    for(let i = 0; i <= arr.length-1; i++) {
-        if(arr[i]%2===1) {
-            newArr.push(arr[i])
+function oddCouple(arrNums) {
+
+    let oddNums= [];
+
+    for(let i = 0; i <= arrNums.length-1; i++) {
+
+        let currentNums = arrNums[i];
+
+        if(currentNums % 2===1) {
+            oddNums.push(currentNums)
         }
-        if(newArr.length === 2) {
-            return newArr
+        if(arrNums.length === 2) {
+            return oddNums
         }
     }
-    return newArr
+    return oddNums
 }
 
 console.log(oddCouple([10, 15, 20]))
